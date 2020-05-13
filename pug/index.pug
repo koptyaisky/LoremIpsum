@@ -1,0 +1,99 @@
+extends templates/main
+
+
+block variables
+    - var pageTitle = 'Главная'
+
+block content
+    section
+        div.section.section-banner
+            div.banner-bg(style="background-image:url('img/banner.jpg')")
+            div.container
+                div.banner-content
+                    div.banner-title
+                        h1 <span class="color-blue">Lorem ipsum</span> dolor sit amet consectetur <span class="color-blue">adipiscing</span>
+                    div.banner-desc
+                        p <span class="text-bold">At vero eos et accusamus et iusto odio dignissimos ducimus!</span>
+                        ul
+                            li - Totam rem aperiam eaque ipsa
+                            li - Sit voluptatem accusantium doloremque laudantium
+                            li - Sed ut perspiciatis, unde omnis iste natus error
+                    div.banner-link
+                        div.banner-link-order
+                            a.blue-btn.btn-small(href="#section-order") Заказать
+                        div.banner-link-more
+                            a.white-btn.btn-small(href="#") Подробнее
+    section
+        div.section.section-order#section-order
+            div.section-order-bg(style="background-image:url('img/map.jpg')")
+            div.container
+                div.order-content
+                    div.order-title
+                        h2 Оформление <span class="color-blue">Заказа</span>
+                        p.order-caption Перед заполнением формы ознакомьтесь с нашей схемой работы!
+                    div.order-info
+                        div.order-info-item
+                            div.order-info-icon(data-icon="1")
+                            div.order-info-name
+                                p Lorem ipsum dolor <br/>sit amet
+                        div.order-info-item
+                            div.order-info-icon(data-icon="2")
+                            div.order-info-name
+                                p Сonsecteturadipiscing elit
+                        div.order-info-item
+                            div.order-info-icon(data-icon="3")
+                            div.order-info-name
+                                p Sed do eiusmod tempor
+                        div.order-info-item
+                            div.order-info-icon(data-icon="4")
+                            div.order-info-name
+                                p Esse cillum dolore <br />eu fugiat
+                        div.order-info-item
+                            div.order-info-icon(data-icon="5")
+                            div.order-info-name
+                                p Excepteur sint occaecat <br />cupidatat non proident
+                    div.order-form
+                        form#make-order
+                            div.form-row
+                                div.form-cell.form-cell-select
+                                    select.form-select.js-example-basic-single(name="type")
+                                        option
+                                        option(value="1") Sed ut perspiciatis
+                                        option(value="2") Nemo enim ipsam
+                                        option(value="3") Et harum quidem
+                                        option(value="4") Temporibus autem
+                                        option(value="5") Itaque earum rerum
+                                        option(value="6") Sed ut perspiciatis
+                                        option(value="7") Nemo enim ipsam
+                                        option(value="8") Et harum quidem
+                                        option(value="9") Temporibus autem
+                                        option(value="10") Itaque earum rerum
+                                        option(value="11") Sed ut perspiciatis
+                                        option(value="12") Nemo enim ipsam
+                                        option(value="13") Et harum quidem
+                                        option(value="14") Temporibus autem
+                                        option(value="15") Itaque earum rerum
+                                    p.error-text Укажите тип
+                                div.form-cell.form-cell-input
+                                    input.form-input(type="email" placeholder="Ваш e-mail" id="order-email" name="email")
+                                    p.error-text Укажите e-mail
+                                div.form-cell.form-cell-input
+                                    input.form-input(type="text" placeholder="Ваше имя" id="order-name" name="name")
+                                    p.error-text Укажите имя
+                                div.form-cell.form-cell-range
+                                    div.form-range(data-min="0" data-max="100" data-value="75")
+                                        div.range-info
+                                            div.range-name
+                                                p Sed ut perspiciatis, unde omnis iste natus
+                                            div.range-value#range-value
+                                                p 75%
+                                        div.slider-range
+                                div.form-cell.form-cell-file
+                                    input.form-file-input(type="file" id="order-file" name="file")
+                                    label.form-file-label(for="order-file")
+                                        span.form-file-icon
+                                        span.form-file-name Прикрепить файл
+                                div.form-cell.form-btn
+                                    button.blue-btn.btn-large.send-form(type="submit") Отправить
+                        div.form-success
+                            p Спасибо! Ваша заявка успешно оформлена! <br />Наш менеджер свяжется с вами!

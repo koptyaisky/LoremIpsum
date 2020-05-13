@@ -1,0 +1,29 @@
+block variables
+include ../mixin/mixin
+
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+
+        title= pageTitle
+
+        link(rel="shortcut icon" href="" type="image/ico")
+
+        link(rel="stylesheet" type="text/css" href="dist/plugin.min.css")
+        link(rel="stylesheet" type="text/css" href="dist/style.css")
+
+
+    body
+        div.wrap
+            include ../modules/header
+
+            div.all-content
+                block content
+
+            include ../modules/footer
+
+        script(type="text/javascript" src="dist/plugin.min.js")
+        script(type="text/javascript" src="dist/main.js")

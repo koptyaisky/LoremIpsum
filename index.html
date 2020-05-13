@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link rel="shortcut icon" href="" type="image/ico">
+    <link rel="stylesheet" type="text/css" href="dist/plugin.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/style.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="header-section">
+          <div class="container">
+            <div class="header-block">
+              <div class="header-logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+              <nav class="header-nav">
+                <ul class="nav-menu">
+                  <li class="nav-item"><a class="nav-link active" href="#">Бизнес</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Цены</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Оформить заказ</a></li>
+                </ul>
+              </nav>
+              <div class="burger">
+                <button class="burger-btn"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="all-content">
+        <section>
+          <div class="section section-banner">
+            <div class="banner-bg" style="background-image:url('img/banner.jpg')"></div>
+            <div class="container">
+              <div class="banner-content">
+                <div class="banner-title">
+                  <h1><span class="color-blue">Lorem ipsum</span> dolor sit amet consectetur <span class="color-blue">adipiscing</span></h1>
+                </div>
+                <div class="banner-desc">
+                  <p><span class="text-bold">At vero eos et accusamus et iusto odio dignissimos ducimus!</span></p>
+                  <ul>
+                    <li>- Totam rem aperiam eaque ipsa</li>
+                    <li>- Sit voluptatem accusantium doloremque laudantium</li>
+                    <li>- Sed ut perspiciatis, unde omnis iste natus error</li>
+                  </ul>
+                </div>
+                <div class="banner-link">
+                  <div class="banner-link-order"><a class="blue-btn btn-small" href="#section-order">Заказать</a></div>
+                  <div class="banner-link-more"><a class="white-btn btn-small" href="#">Подробнее</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="section section-order" id="section-order">
+            <div class="section-order-bg" style="background-image:url('img/map.jpg')"></div>
+            <div class="container">
+              <div class="order-content">
+                <div class="order-title">
+                  <h2>Оформление <span class="color-blue">Заказа</span></h2>
+                  <p class="order-caption">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+                </div>
+                <div class="order-info">
+                  <div class="order-info-item">
+                    <div class="order-info-icon" data-icon="1"></div>
+                    <div class="order-info-name">
+                      <p>Lorem ipsum dolor <br/>sit amet</p>
+                    </div>
+                  </div>
+                  <div class="order-info-item">
+                    <div class="order-info-icon" data-icon="2"></div>
+                    <div class="order-info-name">
+                      <p>Сonsecteturadipiscing elit</p>
+                    </div>
+                  </div>
+                  <div class="order-info-item">
+                    <div class="order-info-icon" data-icon="3"></div>
+                    <div class="order-info-name">
+                      <p>Sed do eiusmod tempor</p>
+                    </div>
+                  </div>
+                  <div class="order-info-item">
+                    <div class="order-info-icon" data-icon="4"></div>
+                    <div class="order-info-name">
+                      <p>Esse cillum dolore <br />eu fugiat</p>
+                    </div>
+                  </div>
+                  <div class="order-info-item">
+                    <div class="order-info-icon" data-icon="5"></div>
+                    <div class="order-info-name">
+                      <p>Excepteur sint occaecat <br />cupidatat non proident</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="order-form">
+                  <form id="make-order">
+                    <div class="form-row">
+                      <div class="form-cell form-cell-select">
+                        <select class="form-select js-example-basic-single" name="type">
+                          <option></option>
+                          <option value="1">Sed ut perspiciatis</option>
+                          <option value="2">Nemo enim ipsam</option>
+                          <option value="3">Et harum quidem</option>
+                          <option value="4">Temporibus autem</option>
+                          <option value="5">Itaque earum rerum</option>
+                          <option value="6">Sed ut perspiciatis</option>
+                          <option value="7">Nemo enim ipsam</option>
+                          <option value="8">Et harum quidem</option>
+                          <option value="9">Temporibus autem</option>
+                          <option value="10">Itaque earum rerum</option>
+                          <option value="11">Sed ut perspiciatis</option>
+                          <option value="12">Nemo enim ipsam</option>
+                          <option value="13">Et harum quidem</option>
+                          <option value="14">Temporibus autem</option>
+                          <option value="15">Itaque earum rerum</option>
+                        </select>
+                        <p class="error-text">Укажите тип</p>
+                      </div>
+                      <div class="form-cell form-cell-input">
+                        <input class="form-input" type="email" placeholder="Ваш e-mail" id="order-email" name="email">
+                        <p class="error-text">Укажите e-mail</p>
+                      </div>
+                      <div class="form-cell form-cell-input">
+                        <input class="form-input" type="text" placeholder="Ваше имя" id="order-name" name="name">
+                        <p class="error-text">Укажите имя</p>
+                      </div>
+                      <div class="form-cell form-cell-range">
+                        <div class="form-range" data-min="0" data-max="100" data-value="75">
+                          <div class="range-info">
+                            <div class="range-name">
+                              <p>Sed ut perspiciatis, unde omnis iste natus</p>
+                            </div>
+                            <div class="range-value" id="range-value">
+                              <p>75%</p>
+                            </div>
+                          </div>
+                          <div class="slider-range"></div>
+                        </div>
+                      </div>
+                      <div class="form-cell form-cell-file">
+                        <input class="form-file-input" type="file" id="order-file" name="file">
+                        <label class="form-file-label" for="order-file"><span class="form-file-icon"></span><span class="form-file-name">Прикрепить файл</span></label>
+                      </div>
+                      <div class="form-cell form-btn">
+                        <button class="blue-btn btn-large send-form" type="submit">Отправить</button>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="form-success">
+                    <p>Спасибо! Ваша заявка успешно оформлена! <br />Наш менеджер свяжется с вами!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="footer-block">
+            <div class="footer-item footer-copy">
+              <p>&copy; 2018 <a href="#">«LoremIpsum.net»</a> Все права защищены.</p>
+            </div>
+            <div class="footer-item footer-info">
+              <ul class="footer-list footer-info-list">
+                <li><a class="footer-link" href="#" target="_blank" data-name="qiwi">Qiwi wallet</a></li>
+                <li><a class="footer-link" href="#" target="_blank" data-name="yandex">Yandex Money</a></li>
+                <li><a class="footer-link" href="#" target="_blank" data-name="webMoney">Web Money</a></li>
+              </ul>
+            </div>
+            <div class="footer-item footer-contact">
+              <ul class="footer-list footer-contact-list">
+                <li><a class="footer-link" href="mailto:info@ipsum228.com" data-name="mail">info@ipsum228.com</a></li>
+                <li><a class="footer-link" href="#" target="_blank" data-name="vk">Мы вконтакте</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="dist/plugin.min.js"></script>
+    <script type="text/javascript" src="dist/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,627 @@
+@import consts
+
+@import mix
+
+@media screen and (max-width: 1230px)
+  .container
+    margin: 0 30px
+
+  .form-input, .form-file-label, .btn-large
+    width: 360px
+
+  .form-cell-select
+    width: 390px
+
+  .form-range
+    width: 750px
+
+@media screen and (max-width: 1199px)
+  .container
+    margin: 0 auto
+    max-width: 932px
+
+  .header-section, footer
+    .container
+      margin: 0 auto
+      max-width: 100%
+      padding: 0 30px
+
+  .header-logo
+    width: 220px
+
+  .header-section
+    padding: 25px 0
+
+  .nav-item:not(:last-child)
+    margin-right: 38px
+
+  .section-banner
+    padding-top: 75px
+    min-height: 700px
+
+  .banner-content
+    padding-top: 120px
+    padding-bottom: 60px
+    max-width: 73%
+
+  .banner-title h1
+    font-size: 38px
+
+  .banner-desc
+    margin-top: 50px
+    margin-bottom: 60px
+    font-size: 18px
+
+  .order-title
+    margin-bottom: 65px
+
+  .order-title h2
+    font-size: 32px
+
+  .order-caption
+    font-size: 16px
+
+  .btn-large, .form-file-label, .form-input
+    width: 298px
+
+  .form-cell-select
+    width: 317px
+
+  .form-row
+    margin-left: -9.5px
+    margin-right: -9.5px
+
+  .form-cell
+    padding: 0 9.5px
+
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+    font-size: 16px
+  input::-moz-placeholder, textarea::-moz-placeholder
+    font-size: 16px
+  input:-moz-placeholder, textarea:-moz-placeholder
+    font-size: 16px
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder
+    font-size: 16px
+
+  .form-input, .select2-container--default .select2-selection--single .select2-selection__rendered
+    font-size: 16px
+
+  .form-range
+    width: 615px
+
+  .range-info
+    font-size: 16px
+
+  .form-file-label
+    font-size: 14px
+
+  .form-file-icon
+    width: 16px
+    margin-right: 15px
+
+  .order-info-icon
+    padding: 0 12px
+    width: 110px
+    height: 86px
+
+  .order-info-name
+    font-size: 14px
+    min-width: 160px
+
+  .order-info-item:not(:last-child)::after
+    left: calc(100% + 9px)
+    top: 43px
+    width: 79px
+
+  .footer-list.footer-contact-list li:not(:last-child)
+    padding-right: 30px
+
+  .footer-list.footer-info-list li
+    padding: 0 15px
+
+  .footer-copy
+    max-width: 180px
+
+  .footer-info
+    padding: 0 15px
+
+  .header-section.on-scroll .header-logo
+    width: 200px
+
+  .header-section.on-scroll .nav-item:not(:last-child)
+    margin-right: 28px
+
+  .select2-results__option
+    padding-top: 10px
+    padding-bottom: 10px
+
+  .blue-btn:hover
+    background: #3e9cdc
+    border-color: $white
+
+  .white-btn:hover
+    color: #2a2b30
+    background: #fff
+
+  .footer-link:hover
+    color: #c3c3c3
+
+  .nav-link:hover
+    color: $white
+
+  .form-success
+    font-size: 14px
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 1199px)
+  .form-file-icon
+    height: 18px
+
+
+@media screen and (max-width: 1023px)
+  footer .container, .header-section .container
+    padding: 0 20px
+
+  .container
+    max-width: 728px
+
+  .header-logo
+    width: 190px
+
+  .nav-item:not(:last-child)
+    margin-right: 26px
+
+  .nav-link
+    font-size: 12px
+
+  .section-banner
+    padding-top: 74px
+    min-height: 620px
+
+  .banner-content
+    padding-top: 90px
+    padding-bottom: 50px
+    max-width: 73%
+
+  .banner-title h1
+    font-size: 32px
+
+  .banner-desc
+    margin-top: 40px
+    margin-bottom: 50px
+    font-size: 16px
+
+  .section-order
+    padding-top: 100px
+    padding-bottom: 110px
+
+  .order-title
+    margin-bottom: 50px
+
+  .order-title h2
+    font-size: 26px
+
+  .order-caption
+    margin-top: 15px
+
+  .order-info-icon
+    padding: 0 10px
+    width: 94px
+    height: 74px
+
+  .order-info-name
+    font-size: 13px
+    min-width: 130px
+    left: -18px
+
+  .order-info-item:last-of-type .order-info-name br
+    display: none
+
+  .order-info-item:not(:last-child)::after
+    left: calc(100% + 6px)
+    top: 37px
+    width: 55px
+    height: 4px
+    background-size: contain
+
+  .form-row
+    margin-left: -10px
+    margin-right: -10px
+
+  .form-cell
+    padding: 0 10px
+
+    &:nth-child(1)
+      order: 0
+
+    &:nth-child(2)
+      order: 1
+
+    &:nth-child(3)
+      order: 2
+
+    &:nth-child(4)
+      order: 4
+      width: 100%
+
+    &:nth-child(5)
+      order: 3
+
+    &:nth-child(6)
+      order: 5
+
+  .form-cell-select
+    width: 374px
+    order: 0
+
+  .btn-large, .form-file-label, .form-input
+    width: 354px
+
+  .form-range
+    width: 100%
+
+  .footer-block
+    flex-wrap: wrap
+
+  .footer-copy
+    font-size: 12px
+    line-height: 13px
+    max-width: 100%
+    width: 100%
+    order: 2
+    margin-top: 20px
+    color: #c3c3c3
+
+  .footer-contact
+    order: 0
+    margin-right: auto
+
+  .footer-info
+    order: 1
+    margin-left: auto
+    padding: 0
+
+  .footer-link
+    line-height: 15px
+    padding-left: 20px
+
+  .footer-link::before
+    width: 12px
+    height: 12px
+    top: 0
+
+  .footer-info::after, .footer-info::before
+    display: none
+
+  .footer-list.footer-info-list li:last-child
+    padding-right: 0
+
+  footer
+    padding: 20px 0
+
+  .header-section.on-scroll .nav-item:not(:last-child)
+    margin-right: 20px
+
+  .header-section.on-scroll .header-logo
+    width: 170px
+
+
+@media screen and (max-width: 767px)
+  .container
+    max-width: 536px
+
+  .header-nav
+    display: block
+    position: fixed
+    top: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background: #10101d
+    padding: 80px 0 20px
+    z-index: -1
+    opacity: 0
+    visibility: hidden
+    transition: opacity 0.2s ease, visibility 0.2s ease
+    overflow-y: auto
+
+  .nav-menu
+    flex-direction: column
+    align-items: flex-start
+
+  .nav-item
+    border-bottom: 1px solid #3d4050
+    display: block
+    width: 100%
+
+    &:not(:last-child)
+      margin-right: 0
+
+    &:first-of-type
+      border-top: 1px solid #3d4050
+
+  .header-section.on-scroll .nav-item:not(:last-child)
+    margin-right: 0
+
+  .nav-link
+    font-size: 24px
+    padding: 25px 20px
+    display: block
+    text-align: right
+    position: relative
+
+  .header-logo, .header-section.on-scroll .header-logo
+    width: 160px
+
+  .header-section, .header-section.on-scroll
+    padding: 20px 0
+
+  .section-banner
+    padding-top: 53px
+    min-height: 450px
+
+  .banner-content
+    padding-top: 60px
+    padding-bottom: 45px
+    max-width: 85%
+
+  .banner-title h1
+    font-size: 24px
+
+  .banner-desc
+    margin-top: 20px
+    margin-bottom: 40px
+    font-size: 14px
+
+  .banner-link-order
+    margin-right: 20px
+
+  .btn-small
+    width: 160px
+    height: 36px
+    font-size: 12px
+    line-height: 35px
+
+  .section-order
+    padding-top: 60px
+    padding-bottom: 80px
+
+  .order-title
+    margin-bottom: 35px
+
+  .order-title h2
+    font-size: 20px
+
+  .order-caption
+    margin-top: 10px
+    font-size: 14px
+
+  .btn-large, .form-file-label, .form-input
+    width: 258px
+
+  .form-cell-select
+    width: 278px
+
+  .form-cell:not(:last-child)
+    margin-bottom: 25px
+
+  .form-input, .select2-container--default .select2-selection--single .select2-selection__rendered
+    font-size: 14px
+
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+    font-size: 14px
+  input::-moz-placeholder, textarea::-moz-placeholder
+    font-size: 14px
+  input:-moz-placeholder, textarea:-moz-placeholder
+    font-size: 14px
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder
+    font-size: 14px
+
+  .form-file-icon
+    width: 14px
+    margin-right: 10px
+
+  .form-file-label
+    font-size: 12px
+
+  .footer-block
+    justify-content: flex-start
+
+  .footer-copy
+    margin-top: 15px
+
+  .footer-info
+    margin-left: 0
+    margin-top: 15px
+
+  .footer-list.footer-info-list li:first-of-type
+    padding-left: 0
+
+  .footer-contact
+    margin-right: 0
+
+  .footer-list.footer-info-list li
+    padding: 0 10px
+
+  .footer-list.footer-contact-list li:not(:last-child)
+    padding-right: 20px
+
+  .order-info
+    flex-direction: column
+    padding-bottom: 0
+    margin-bottom: 45px
+
+  .order-info-item
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    width: 100%
+
+    &:not(:last-child)
+      margin-bottom: 25px
+
+  .order-info-name
+    position: relative
+    font-size: 16px
+    left: 0
+    margin-left: 15px
+    flex: 1 1 auto
+    text-align: left
+    top: 0
+
+    br
+      display: none
+
+  .order-info-item:not(:last-child)::after
+    display: none
+
+  .order-info-icon
+    padding: 0
+    width: 60px
+    height: 60px
+    flex: 0 0 60px
+
+  .burger
+    display: block
+    position: relative
+    z-index: 5
+
+  .burger-btn
+    position: relative
+    display: block
+    width: 30px
+    height: 18px
+    background: transparent
+    border-top: 2px solid
+    border-bottom: 2px solid
+    color: $white
+    font-size: 0
+    cursor: pointer
+    transition: all 0.25s ease-in-out
+
+    &::before, &::after
+      content: ''
+      display: block
+      width: 100%
+      height: 2px
+      position: absolute
+      top: 50%
+      left: 50%
+      background: currentColor
+      transform: translate(-50%, -50%)
+      transition: transform 0.25s ease-in-out
+
+  .header-block.open-menu
+    .burger
+      width: 100%
+      padding: 20px
+      background: #10101d
+      position: fixed
+      right: 0
+      top: 0
+
+    .burger-btn
+      border-color: transparent
+      margin-left: auto
+
+      &::before
+        transform: translate(-50%, -50%) rotate(45deg)
+      &::after
+        transform: translate(-50%, -50%) rotate(-45deg)
+
+    .header-nav
+      opacity: 1
+      visibility: visible
+      z-index: 3
+      transition: opacity 0.35s ease, visibility 0s ease
+
+  .form-success
+    font-size: 13px
+
+
+@media screen and (max-width: 575px)
+  .container
+    max-width: 100%
+    padding: 0 20px
+
+  .header-logo, .header-section.on-scroll .header-logo
+    width: 145px
+
+  .header-section.on-scroll
+    padding: 20px 0
+
+  .section-banner
+    padding-top: 58px
+    min-height: 450px
+
+  .banner-content
+    padding-top: 40px
+    padding-bottom: 60px
+    max-width: 95%
+
+  .banner-title h1
+    font-size: 22px
+
+  .banner-desc
+    margin-bottom: 30px
+
+  .banner-link
+    flex-direction: column
+    align-items: flex-start
+
+  .banner-link-order
+    margin-right: 0
+    margin-bottom: 15px
+
+  .btn-small
+    width: 200px
+    height: 40px
+    font-size: 13px
+    line-height: 39px
+
+  .form-cell-select, .form-cell, .btn-large, .form-file-label, .form-input
+    width: 100%
+
+  .form-cell:not(:last-child)
+    margin-bottom: 20px
+
+  .form-cell:nth-child(4)
+    order: 3
+    margin-top: 10px
+    margin-bottom: 30px
+
+  .form-cell:nth-child(5)
+    order: 4
+
+  .range-info
+    font-size: 14px
+
+  .range-name
+    flex: 0 0 50%
+
+  .form-cell.form-btn
+    margin-top: 10px
+
+  .footer-block
+    flex-direction: column
+    align-items: flex-start
+
+  .footer-copy, .footer-info
+    margin-top: 20px
+
+  .footer-list.footer-info-list, .footer-list.footer-contact-list
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+
+  .footer-list.footer-info-list li
+    padding: 4px 0
+
+  .footer-list.footer-contact-list li:not(:last-child)
+    padding-right: 0
+    padding-bottom: 8px
+
+  .order-info-item:not(:last-child)
+    margin-bottom: 20px
+
+  .error-text
+    margin-top: 2px
